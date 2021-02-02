@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const app = express();
 const logger = require("morgan");
@@ -16,6 +18,9 @@ app.get("/", (req, res) => {
     message: "Test Route, babyyyyy",
   });
 });
+
 ////// ROUTES FOR CONTROLLERS //////
+const keyboardPartsRouter = require("./controllers/keyboardPartsRoutes");
+app.use("/keyboard-parts", keyboardPartsRouter);
 
 app.listen(PORT, () => console.log(`listening in on port: ${PORT}`));
