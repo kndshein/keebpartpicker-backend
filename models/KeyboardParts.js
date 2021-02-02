@@ -8,5 +8,5 @@ const keyboardPartsSchema = new Schema({
   case: String,
 });
 
-const keyboardPartsModel = mongoose.model("KeyboardParts", keyboardPartsSchema);
-module.exports = keyboardPartsModel;
+// const keyboardPartsModel = mongoose.model("KeyboardParts", keyboardPartsSchema);
+module.exports = keyboardPartsSchema;
