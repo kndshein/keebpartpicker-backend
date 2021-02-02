@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 });
 
 ////// ROUTES FOR CONTROLLERS //////
-const keyboardPartsRouter = require("./controllers/keyboardPartsRoutes");
-app.use("/keyboard-parts", keyboardPartsRouter);
+const keyboardsRouter = require("./controllers/keyboardsRoutes");
+app.use("/keyboards", keyboardsRouter);
 
 app.listen(PORT, () => console.log(`listening in on port: ${PORT}`));
