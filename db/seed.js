@@ -1,7 +1,7 @@
 const keyboardModel = require("../models/Keyboard");
 const keyboardPartsModel = require("../models/KeyboardParts");
 
-const keyboards = [
+const keyboardData = [
   {
     name: "Batman",
     type: "60% Keyboard",
@@ -35,7 +35,7 @@ const keyboards = [
 ];
 
 keyboardModel
-  .create(keyboards)
+  .create(keyboardData)
   .then((keyboards) => {
     console.log(keyboards);
   })
